@@ -1,0 +1,70 @@
+.ToDoListApp{
+    width: 425px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+.ToDoListApp h1{
+    font-size: 3rem;
+}
+.ToDoListApp input{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border: none;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+}
+.ToDoListApp button{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 5px;
+    border: none;
+    border-left: solid 1px black;
+    border-top-right-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    background-color: #56bf60;
+    color: white;
+}
+.ToDoListApp table{
+    font-size: 1.13rem;
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-spacing: 0 0.5rem;
+}
+.ToDoListApp table td{
+    cursor: pointer;
+    margin: 5px 0;
+}
+.ToDoListApp table td:nth-child(1){
+    cursor: default;
+    width: 65%;
+    text-wrap: wrap;
+    text-align: left;
+    cursor: text;
+    color: black;
+    background-color: #f0f0f0;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+}
+.ToDoListApp table td:nth-child(2){
+    width: 15%;
+    color: white;
+    background-color: #56bf60;
+}
+.ToDoListApp table td:nth-child(3){
+    background-color: brown;
+    padding-top: 3px;
+}
+.ToDoListApp table td:nth-child(4){
+    background-color: #52abf4;
+    border-right: 1px solid #181a1b;
+}
+.ToDoListApp table td:nth-child(5){
+    background-color: #52abf4;
+    border-top-right-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+}
