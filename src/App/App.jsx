@@ -18,7 +18,7 @@ function App() {
   }
 
   const addNewTodo = () => {
-    const removeSpace = addTodo.todoName.trim().replaceAll(/\s+/g, ' ');
+    const removeSpace = addTodo.todoName.replaceAll(/\s+/g, ' ').trim();
 
     if(removeSpace !== ""){
       setTodos(t => [...t, addTodo]);
