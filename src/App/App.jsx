@@ -9,11 +9,11 @@ function App() {
     const maxLength = 32;
     
     if (event.target.value.length > maxLength) {
-      setAddTodo({...todos, [event.target.name]: event.target.value.substring(0, maxLength)})
+      setAddTodo({...addTodo, [event.target.name]: event.target.value.substring(0, maxLength)})
         alert('Maximum limit reached!');
     }
     else{
-      setAddTodo({...todos, [event.target.name]: event.target.value})
+      setAddTodo({...addTodo, [event.target.name]: event.target.value})
     }
   }
 
@@ -29,7 +29,7 @@ function App() {
   const toggleTodo = (index) => {
     setTodos(todos.map((todo, i) => {
       if (i === index) {
-        return { ...todo, isTodoDone: !todo.isTodoDone };
+        return {...todo, isTodoDone: !todo.isTodoDone};
       }
       return todo;
     }));
